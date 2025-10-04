@@ -39,20 +39,25 @@ export function initializeNavigation() {
   // Smooth scrolling for navigation links with responsive offset
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
       const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
       
-      if (targetSection) {
-        const headerHeight = header.offsetHeight;
-        const extraOffset = window.innerWidth < 768 ? 20 : 40;
-        const targetPosition = targetSection.offsetTop - headerHeight - extraOffset;
+      // Only prevent default and smooth scroll if it's an anchor link (starts with #)
+      if (targetId && targetId.startsWith('#')) {
+        e.preventDefault();
+        const targetSection = document.querySelector(targetId);
         
-        window.scrollTo({
-          top: Math.max(0, targetPosition),
-          behavior: 'smooth'
-        });
+        if (targetSection) {
+          const headerHeight = header.offsetHeight;
+          const extraOffset = window.innerWidth < 768 ? 20 : 40;
+          const targetPosition = targetSection.offsetTop - headerHeight - extraOffset;
+          
+          window.scrollTo({
+            top: Math.max(0, targetPosition),
+            behavior: 'smooth'
+          });
+        }
       }
+      // For non-anchor links (like /securechat), allow default navigation behavior
     });
   });
 
