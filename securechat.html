@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Secure Messenger - Private, Simple, Integrated</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8',
+                        'secondary-green': '#059669',
+                        'bg-light': '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Optional custom styling for scroll-smoothness */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-primary-blue">
+                SecureChat
+            </div>
+            <a href="#download" class="px-4 py-2 bg-secondary-green text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="bg-bg-light pt-16 pb-24 sm:pt-24 sm:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Messaging That Puts <span class="text-primary-blue">You</span> In Control.
+            </h1>
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                Our messenger is built for enterprise-grade communication. Enjoy the ease of use of a consumer app, combined with *unparalleled security* and *seamless integration* into your existing services.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#security" class="px-8 py-3 text-lg font-bold bg-primary-blue text-white rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Explore Privacy
+                </a>
+                <a href="#integration" class="px-8 py-3 text-lg font-bold bg-white text-primary-blue border-2 border-primary-blue rounded-xl shadow-lg hover:bg-primary-blue hover:text-white transition duration-300 transform hover:scale-105">
+                    See Integration
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Features - Simplicity & UX -->
+    <section id="simplicity" class="py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Simply the Best Experience</h2>
+                <p class="mt-3 text-xl text-gray-600">From setup to daily use, we've made it effortless.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Feature 1: Easy to Use -->
+                <div class="p-6 bg-bg-light rounded-2xl shadow-xl border border-gray-100">
+                    <div class="w-12 h-12 mx-auto mb-4 text-primary-blue">
+                        <!-- Feather icon: Message Circle -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Intuitive Interface</h3>
+                    <p class="text-gray-600">
+                        Designed to be instantly familiar, our interface is clean and uncluttered, making daily communication smooth and enjoyable.
+                    </p>
+                </div>
+                <!-- Feature 2: Simple to Install -->
+                <div class="p-6 bg-bg-light rounded-2xl shadow-xl border border-gray-100">
+                    <div class="w-12 h-12 mx-auto mb-4 text-primary-blue">
+                        <!-- Feather icon: Download Cloud -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-cloud"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Rapid Deployment</h3>
+                    <p class="text-gray-600">
+                        Installation is straightforward and requires minimal configuration, getting your team communicating securely in minutes, not hours.
+                    </p>
+                </div>
+                <!-- Feature 3: Effortless Updates -->
+                <div class="p-6 bg-bg-light rounded-2xl shadow-xl border border-gray-100">
+                    <div class="w-12 h-12 mx-auto mb-4 text-primary-blue">
+                        <!-- Feather icon: Refresh CCW -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-ccw"><path d="M21 12A9 9 0 0 0 6 5.3v2.8A7 7 0 0 1 19 12"/><path d="M3 12a9 9 0 0 0 15 6.7v-2.8A7 7 0 0 1 5 12"/><path d="M3 6h4v4M17 18h4v-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Always Up-to-Date</h3>
+                    <p class="text-gray-600">
+                        Updates are simple and non-disruptive, ensuring you always have the latest features and security patches with zero fuss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <hr class="border-gray-200">
+    </div>
+
+    <!-- 3. Features - Security & Privacy -->
+    <section id="security" class="py-20 sm:py-28 bg-bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Your Data. Your Control.</h2>
+                <p class="mt-3 text-xl text-gray-600">True privacy is built from the ground up, starting with where your information lives.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0 lg:space-x-12">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <div class="space-y-8">
+                        <!-- Securely Stored on Your System -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 text-secondary-green mt-1">
+                                <!-- Feather icon: Database -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">On-Premise Data Storage</h3>
+                                <p class="mt-1 text-gray-600">
+                                    Your data is *securely stored on your own system*, whether that's your local server or private cloud instance. We never hold or access your sensitive communications.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Complete Privacy -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 text-secondary-green mt-1">
+                                <!-- Feather icon: Shield Check -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Guaranteed Complete Privacy</h3>
+                                <p class="mt-1 text-gray-600">
+                                    Since you manage the data, you ensure *complete privacy* and compliance with your organization's strictest security protocols. No third-party data leaks, ever.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Encryption/Self-Sovereignty -->
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-8 h-8 text-secondary-green mt-1">
+                                <!-- Feather icon: Lock -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Total Data Sovereignty</h3>
+                                <p class="mt-1 text-gray-600">
+                                    Maintain full control over access, backup, and deletion, giving you unmatched *data sovereignty* and peace of mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image/Illustration Placeholder -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <!-- Placeholder for a sleek illustration of data security/a padlock -->
+                    <div class="w-full max-w-md h-72 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 font-semibold text-xl border-4 border-dashed border-gray-400">
+                        Secure Data Illustration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Features - Integration & Value -->
+    <section id="integration" class="py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Cost-Effective & Infinitely Flexible</h2>
+                <p class="mt-3 text-xl text-gray-600">A powerful tool that adapts to your environment, not the other way around.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Integration Text -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-primary-blue">Seamless Integration with Every Service</h3>
+                    <p class="text-gray-700 text-lg">
+                        Our powerful, well-documented API allows you to *seamlessly integrate* the messenger with nearly every internal and external service you use—from CRM and helpdesk systems to monitoring dashboards and proprietary tools.
+                    </p>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-secondary-green font-bold">✓</span>
+                            <span>Automated Notifications from ERP/CRM systems.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-secondary-green font-bold">✓</span>
+                            <span>Direct Chat-to-Ticket conversion for IT Support.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-secondary-green font-bold">✓</span>
+                            <span>Custom Bot and Automation deployment within your chat environment.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Cost-Effectiveness Card -->
+                <div class="p-8 bg-primary-blue rounded-3xl shadow-2xl text-white">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12">
+                            <!-- Feather icon: Dollar Sign -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3 class="text-3xl font-bold">Cost-Effective Solution</h3>
+                    </div>
+                    <p class="text-white text-opacity-80 mt-4">
+                        Unlike per-user cloud subscriptions, our self-hosted model makes us highly *cost-effective* as your team grows. Pay once for the platform, not for every seat. Future-proof your communications budget without compromising features or performance.
+                    </p>
+                    <div class="mt-6 text-2xl font-extrabold">
+                        Scale without limits. Save without compromise.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Final CTA -->
+    <section id="download" class="py-20 bg-primary-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-4xl font-extrabold mb-4">Ready for Private, Simple Messaging?</h2>
+            <p class="text-xl opacity-90 mb-8">
+                Install, configure, and communicate—all while keeping your data safely in-house.
+            </p>
+            <a href="#" class="inline-block px-10 py-4 text-xl font-bold bg-secondary-green text-white rounded-xl shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105">
+                Download Free Trial
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+            <div class="mb-4 sm:mb-0">
+                <p>&copy; 2025 SecureChat. All rights reserved.</p>
+            </div>
+            <div class="space-x-6">
+                <a href="#security" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#integration" class="text-gray-400 hover:text-white transition duration-300">API Documentation</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
