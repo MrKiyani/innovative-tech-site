@@ -1,4 +1,4 @@
-# Innovation Tech Solutions - Website Design Brief
+# Innovative Tech Solutions - Website Design Brief
 
 ## Color Palette
 

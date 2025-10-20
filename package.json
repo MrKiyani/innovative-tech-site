@@ -1,15 +1,15 @@
 {
   "name": "innovation-tech-solutions-website",
   "version": "1.0.0",
-  "description": "Innovation Tech Solutions IT Services Website",
+  "description": "Innovative Tech Solutions IT Services Website",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve . -p 3000",
     "start": "npx serve . -p 3000",
     "build": "echo 'Static site - no build needed'"
   },
-  "keywords": ["website", "it-services", "innovation-tech-solutions"],
-  "author": "Innovation Tech Solutions",
+  "keywords": ["website", "it-services", "innovative-tech-solutions"],
+  "author": "Innovative Tech Solutions",
   "license": "MIT",
   "devDependencies": {
     "serve": "^14.2.1"

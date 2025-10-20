@@ -1,5 +1,5 @@
 /**
- * Innovation Tech Solutions Website - Main JavaScript File
+ * Innovative Tech Solutions Website - Main JavaScript File
  * Handles all interactive functionality including navigation, animations, and form handling
  * Optimized for responsive design and performance across all devices
  */
@@ -67,4 +67,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-console.log('Innovation Tech Solutions modular website loaded successfully! 🚀');
+console.log('Innovative Tech Solutions modular website loaded successfully! 🚀');
